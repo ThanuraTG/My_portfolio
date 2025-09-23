@@ -1,0 +1,113 @@
+
+.stock-ticker {
+    font-size: 15px;
+    background-color: rgb(218, 197, 167, 0.2);
+    border-block: 1px solid rgb(218, 197, 167, 0.4);
+    overflow: hidden;
+    user-select: none;
+    font-weight: bold;
+
+    --gap: 20px;
+    display: flex;
+    gap: var(--gap);
+}
+
+.stock-ticker ul {
+    list-style: none;
+    flex-shrink: 0;
+    gap: 20px;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap);
+    animation: scroll 20s linear infinite;
+}
+.stock-ticker ul li span{
+    word-spacing: 20px;
+}
+.stock-ticker ul li .texts{
+    word-spacing: 5px;
+}
+
+@keyframes scroll {
+    to {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}
+
+.stock-ticker .price {
+    margin-inline: 4px;
+}
+
+
+section {
+    background-color: rgb(218, 197, 167, 0.04); /* Dark background */
+    padding: 40px 20px 1px;
+}
+
+.head {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr; /* 4 columns */
+    gap: 30px;
+    align-items: flex-start;
+    margin-bottom: 0px;
+}
+
+.logo img {
+    max-width: 300px;
+}
+
+.information h2,
+.follow h2,
+.contac h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.information ul,
+.follow ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.information ul li,
+.follow ul li {
+    margin-bottom: 10px;
+}
+
+.information ul li a,
+.follow ul li a {
+    text-decoration: none;
+    color: #d6c2a1;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.information ul li a:hover,
+.follow ul li a:hover {
+    color: #fff;
+}
+
+.follow ul li img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.contac p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.copyright {
+    border-top: 1px solid #2a2a2a;
+    text-align: center;
+    margin: 0px 10px;
+    padding-top: 1px;
+    font-size: 13px;
+    color: #a99876;
+}

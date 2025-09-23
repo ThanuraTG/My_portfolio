@@ -1,0 +1,131 @@
+.work_name {
+    text-align: center;
+    color: #DAC5A7;
+    padding: 100px 0 0px 0;
+}
+.work_name h1 {
+    font-size: 6rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+    letter-spacing: 3px;
+}
+.work_name p {
+    font-size: 1.4rem;
+    color: #dac5a7a2;
+    max-width: 550px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-family: 'Belleza', sans-serif;
+}
+
+
+.work_calcu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+    background-color: #dac5a700;
+    padding: 80px 0;
+}
+.work_friend {
+    text-align: center;
+    color: #DAC5A7;
+}
+.work_friend h3 {
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: #DAC5A7;
+}
+.work_friend h1 {
+    font-size: 48px;
+    font-weight: 500;
+    margin: 0;
+    color: #DAC5A7;
+}
+
+
+.my_project {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 50px 200px 100px;
+    background-color: #dac5a700;
+}
+.project_01 {
+    display: flex;
+    gap: 40px;
+    background-color: rgb(218, 197, 167, 0.005);
+    border: 1px solid rgb(218, 197, 167, 0.2);;
+    border-radius: 8px;
+    padding: 10px 10px 10px 30px;
+    color: #DAC5A7;
+}
+.MP_name {
+    flex: 1;
+    margin-top: 20px;
+    font-family: "Abel",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.MP_name h1 {
+    font-size: 40px;
+    margin: 0;
+    color: #DAC5A7;
+    font-weight: 400;
+}
+.MP_name h2 {
+    font-size: 38px;
+    font-weight: 300;
+    margin-top: 10px;
+    line-height: 1.3;
+    color: #DAC5A7;
+}
+.MP_detl {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.MP_p,
+.MP_ul,
+.MP_vc {
+    background-color: rgb(218, 197, 167, 0.03);
+    border: 1px solid rgb(218, 197, 167, 0.2);
+    padding: 5px 30px;
+}
+.MP_detl h3 {
+    font-size: 25px;
+    margin-bottom: 8px;
+    color: #DAC5A7;
+}
+.MP_detl p,
+.MP_detl ul,
+.MP_detl li {
+    color: #cccccc;
+    font-size: 20px;
+    line-height: 1.6;
+}
+.MP_ul ul {
+    /* list-style: none; */
+    padding: 0px 20px;
+}
+.MP_ul li {
+    padding: 3px 0px;
+    font-size: 20px;
+}
+.MP_vc p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.MP_vc .vertion{
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    gap: 30px;
+}
+.MP_vc .vertion img{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}

@@ -1,0 +1,84 @@
+.service_name {
+    text-align: center;
+    color: #DAC5A7;
+    padding: 100px 0 0px 0;
+}
+
+.service_name h1 {
+    font-size: 7.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.service_name p {
+    font-size: 1.4rem;
+    color: #dac5a7a2;
+    max-width: 550px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-family: 'Belleza', sans-serif;
+}
+.service_part {
+    display: grid;
+    background-color: #dac5a700;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 100px 250px;
+}
+
+.service_div {
+    background-color: rgb(218, 197, 167, 0.04);
+    border: 1px solid rgb(218, 197, 167, 0.2);
+    padding: 30px;
+    color: #DAC5A7;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.service_div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 10px rgba(210, 182, 142, 0.1);
+}
+
+.service_div h1:first-child {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+    color: #DAC5A7;
+}
+
+.service_div h1:nth-child(2) {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 10px 0 20px 0;
+    color: #DAC5A7;
+}
+
+.service_div p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #DAC5A7;
+    margin-bottom: 25px;
+}
+
+.service_div button {
+    background: transparent;
+    border: 1px solid #d9c5a4;
+    color: #d9c5a4;
+    padding: 8px 18px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.service_div button:hover {
+    background-color: #d9c5a4;
+    color: #111;
+}
+
+    /* Responsive */
+@media (max-width: 768px) {
+    section {
+        grid-template-columns: 1fr;
+    }
+}
