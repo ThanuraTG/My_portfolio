@@ -203,3 +203,210 @@ section .ski_h{
 .lang h3 {
     font-size: 25px;
 }
+
+
+/* ==================== Responsive ==================== */
+@media (max-width: 1024px) {
+    .full_parts {
+        margin: 0px 40px;
+    }
+    .full_part {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .img_part img {
+        width: 280px;
+    }
+    .name_part h1 {
+        font-size: 60px;
+    }
+    .name_part h3 {
+        font-size: 18px;
+    }
+    .detail {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .menu_part {
+        flex-direction: row;
+        max-width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .menu_part button {
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 780px) {
+    .full_parts {
+        margin: 0px 15px;
+    }
+    .name_part h1 {
+        font-size: 40px;
+    }
+    .name_part h3 {
+        font-size: 16px;
+    }
+    .buttons h4 {
+        font-size: 14px;
+    }
+    .detail_part h1 {
+        font-size: 30px;
+    }
+    .detail_part p {
+        font-size: 16px;
+    }
+    .mephoto img {
+        width: 250px;
+    }
+    .skl {
+        flex-direction: column;
+        align-items: center;
+    }
+    .lang {
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+    }
+    .lang h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .full_parts {
+        margin: 0px 10px;
+    }
+    .intros_part{
+        padding: 0px;
+        margin-bottom: -40px;
+        /* background-color: aliceblue; */
+    }
+    .full_part {
+        flex-direction: column;
+        gap: 0px;
+        text-align: center;
+
+    }
+
+    .img_part img {
+        width: 250px;
+    }
+
+    .name_part h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .name_part h3 {
+        font-size: 14px;
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+
+    .buttons {
+        text-align: center;
+        justify-content: center;
+        gap: 5px;
+        img{
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    .buttons h4 {
+        font-size: 12px;
+    }
+
+    /* Detail section */
+    .detail {
+        flex-direction: column;
+        gap: 35px;
+        padding: 0px 15px;
+    }
+
+    .menu_part {
+        flex-direction: column;
+        /* width: 100%; */
+        gap: 12px;
+        padding: 20px;
+    }
+
+    .menu_part button {
+        padding: 8px 15px;
+        font-size: 14px;
+        width: 100%;
+    }
+    
+    /* details section */
+    .detail_part section {
+        padding: 20px;
+    }
+
+    .detail_part h1 {
+        font-size: 24px;
+    }
+
+    .detail_part h3 {
+        font-size: 14px;
+    }
+
+    .detail_part p {
+        font-size: 14px;
+    }
+
+    .mephoto img {
+        width: 180px;
+        margin: 10px 0 5px;
+    }
+
+    /* education section */
+    .edu {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0px;
+        text-align: left;
+    }0
+
+    .edu h3 {
+        font-size: 14px;
+    }
+
+    .edu h4 {
+        font-size: 12px;
+    }
+
+    /* Skills section */
+    .part_3{
+        padding-bottom: 0;
+        background-color: #d1923800;
+    }
+    .ski_h{
+        padding: 10px;
+    }
+    .skl {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: -20px;
+    }
+
+    .lang {
+        width: 95%;
+        justify-content: center;
+        gap: 20px;
+        padding: 5px;
+    }
+
+    .lang img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .lang h3 {
+        font-size: 18px;
+    }
+}

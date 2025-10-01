@@ -129,3 +129,109 @@
     height: 50px;
     margin-top: 10px;
 }
+
+
+
+/* ===================== Responsive ===================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .work_calcu {
+        gap: 100px;
+        padding: 60px 0;
+    }
+
+    .my_project {
+        padding: 50px 80px;
+    }
+
+    .work_name h1 {
+        font-size: 4.5rem;
+    }
+}
+
+/* Mobile Landscape & Small Tablets */
+@media (max-width: 768px) {
+    .work_name{
+        padding: 40px 20px 0px;
+    }
+    .work_calcu {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 20px;
+        margin: 30px 70px;
+        border-radius: 10px;
+        border: 2px solid rgb(218, 197, 167, 0.2);
+        h3{
+            font-size: 15px;
+        }
+        h1{
+            font-size: 30px;
+        }
+    }
+
+    .my_project {
+        padding: 40px 30px;
+    }
+
+    .project_01 {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .MP_name h1 {
+        font-size: 30px;
+    }
+
+    .MP_name h2 {
+        font-size: 26px;
+    }
+
+    .MP_detl h3 {
+        font-size: 20px;
+    }
+
+    .MP_detl p,
+    .MP_detl li {
+        font-size: 16px;
+    }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+    .work_name h1 {
+        font-size: 2.5rem;
+    }
+
+    .work_name p {
+        font-size: 1rem;
+    }
+
+    .my_project {
+        padding: 20px 15px;
+        gap: 20px;
+    }
+
+    .project_01 {
+        padding: 15px;
+    }
+
+    .MP_name h2 {
+        font-size: 22px;
+    }
+
+    .MP_detl h3 {
+        font-size: 18px;
+    }
+
+    .MP_detl p,
+    .MP_detl li {
+        font-size: 14px;
+    }
+
+    .MP_vc .vertion img {
+        width: 35px;
+        height: 35px;
+    }
+}

@@ -37,7 +37,7 @@ export default function About() {
                             <img src={first_profile} alt="" srcset="" />
                         </div>
                         <div className="name_part">
-                            <h1>Thanura <br />Thilak</h1>
+                            <h1>Thanura<br />Thilak</h1>
                             <h3>Delivering Premium Web Design and Development Services to Boost Your Online Presence.</h3>
                             <div className="buttons">
                                 <button><img src={importance} alt="" srcset="" /></button>

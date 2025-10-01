@@ -19,20 +19,22 @@
     line-height: 1.6;
     font-family: 'Belleza', sans-serif;
 }
+
 .service_part {
     display: grid;
-    background-color: #dac5a700;
+    background-color: transparent;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     padding: 100px 250px;
 }
 
 .service_div {
-    background-color: rgb(218, 197, 167, 0.04);
-    border: 1px solid rgb(218, 197, 167, 0.2);
+    background-color: rgba(218, 197, 167, 0.04);
+    border: 1px solid rgba(218, 197, 167, 0.2);
     padding: 30px;
     color: #DAC5A7;
     transition: transform 0.2s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
 }
 
 .service_div:hover {
@@ -69,6 +71,7 @@
     font-size: 0.9rem;
     cursor: pointer;
     transition: all 0.3s ease;
+    border-radius: 6px;
 }
 
 .service_div button:hover {
@@ -76,9 +79,56 @@
     color: #111;
 }
 
-    /* Responsive */
+/* Responsive */
+@media (max-width: 1024px) {
+    .service_part {
+        padding: 80px 100px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .service_name h1 {
+        font-size: 5rem;
+    }
+}
+
 @media (max-width: 768px) {
-    section {
+    .service_part {
         grid-template-columns: 1fr;
+        padding: 60px 40px;
+    }
+
+    .service_name h1 {
+        font-size: 3.5rem;
+    }
+
+    .service_name p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .service_part {
+        padding: 40px 20px;
+    }
+    .service_name {
+        padding: 30px 10px 0px;
+        p{
+            font-size: 1rem;
+        }
+    }
+    .service_name h1 {
+        font-size: 2.5rem;
+    }
+
+    .service_div {
+        padding: 20px;
+    }
+
+    .service_div h1:nth-child(2) {
+        font-size: 1.5rem;
+    }
+
+    .service_div p {
+        font-size: 0.9rem;
     }
 }
