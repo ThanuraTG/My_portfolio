@@ -1,19 +1,19 @@
+import { Link } from 'react-router-dom'
 import Footer from '../Component/Footer'
 import Navi_bar from '../Component/Navi_bar'
-import { Link } from 'react-router-dom'
 import '../Css/home.css'
 import first_profile_1 from '../Images/first_profile_1.png'
-import profile from '../Images/profile.png'
-import linkin from '../Images/linkin.png'
+import flutter from '../Images/flutter.png'
 import github from '../Images/github.png'
+import html from '../Images/html.png'
+import java from '../Images/java.png'
+import linkin from '../Images/linkin.png'
+import php from '../Images/php.png'
+import profile from '../Images/profile.png'
 import python from '../Images/python.png'
 import react from '../Images/react.png'
-import java from '../Images/java.png'
-import html from '../Images/html.png'
-import flutter from '../Images/flutter.png'
-import php from '../Images/php.png'
-import x from '../Images/x.png'
 import springboot from '../Images/springboot.png'
+import x from '../Images/x.png'
 
 export default function Home() {
     return (
@@ -96,7 +96,7 @@ export default function Home() {
                         <p>  As a web designer and developer, I am a highly motivated and resourceful individual with a relentless determination to deliver innovative solutions, bringing a unique combination of creativity and technical expertise to each project.</p>
                     </div>
                     <div className="cv_and_link">
-                        <button type="button">Download CV</button>
+                        <a href="/my.pdf" download="Thanura-Thilak.pdf"><button type="button">Download CV</button></a>
                         <div className="logo_link">
                             <a href="https://github.com/ThanuraTG"><img src={github} alt="" /></a>
                             <a href="https://www.linkedin.com/in/thanura-thilak-7b41202bb/"><img src={linkin} alt="" /></a>
