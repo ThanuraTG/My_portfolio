@@ -25,7 +25,8 @@ nav {
     text-decoration: none;
     color: rgb(218, 197, 167);
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 100;
+    letter-spacing: 1.5px;
 }
 .sidebar button {
     text-align: center;
@@ -36,8 +37,67 @@ nav {
     border-radius: 5px;
     font-weight: 600;
     border: none;
-    a{
-        text-decoration: none;
-        color: rgb(0, 0, 167);
+}
+.sidebar button a {
+    text-decoration: none;
+    color: rgb(0, 0, 167);
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 1024px) {
+    nav {
+        padding: 0px 40px;
+    }
+    .sidebar ul {
+        gap: 25px;
+    }
+    .sidebar ul a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 0px 20px;
+    }
+    .sidebar {
+
+        align-items: flex-start;
+        gap: 15px;
+        padding: 20px 10px;
+    }
+    .sidebar ul {
+        width: 100%;
+        gap: 15px;
+    }
+    .sidebar ul a {
+        font-size: 16px;
+    }
+    .sidebar button {
+        align-items: flex-end;
+        width: 100%;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 0px 10px;
+        text-align: center;
+    }
+    .sidebar img {
+        width: 40px;
+        margin:0px;
+    }
+    .sidebar ul {
+        /* gap: 10px; */
+        margin: 0px
+    }
+    .sidebar ul a {
+        font-size: 11px;
+    }
+    .sidebar button {
+        padding: 5px;
+        font-size: 12px;
     }
 }

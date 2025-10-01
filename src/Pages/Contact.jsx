@@ -22,11 +22,11 @@ export default function Contact() {
     
     const sendEmail = (e) => {
         e.preventDefault();
-    
+        
         emailjs
         .sendForm(
             "service_25610",
-            "template_25610",
+            "template_qh31ti4",
             form.current,
             "3yJKtC3DDDM8ofUmk"
         )
@@ -37,7 +37,7 @@ export default function Contact() {
             },
             (error) => {
             console.log(error.text);
-            alert("Error sending message.");
+            alert("Error sending message.",error);
             }
         );
     };
@@ -55,9 +55,9 @@ export default function Contact() {
                         <h3>CONTACT</h3>
                         <h1>Let's Get in touch.</h1>
                         <form ref={form} onSubmit={sendEmail}>
-                            <input type="text" className="user_name" required placeholder='NAME' />
-                            <input type="text" className="user_email" required placeholder='EMAIL' />
-                            <textarea className="message" required placeholder="MESSAGE"></textarea>
+                            <input type="text" name="user_name" required placeholder='NAME' />
+                            <input type="text" name="user_email" required placeholder='EMAIL' />
+                            <textarea name="message" required placeholder="MESSAGE"></textarea>
                             <button type="submit">SEND MESSAGE</button>
                         </form>
                     </div>

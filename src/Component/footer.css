@@ -111,3 +111,78 @@ section {
     font-size: 13px;
     color: #a99876;
 }
+
+
+@media (max-width: 1024px){
+    .head {
+        grid-template-columns: 1.5fr 1fr 1fr 1fr;
+        gap: 10px;
+        text-align: center;
+    }
+    .logo img {
+        max-width: 200px;
+    }
+    .information,
+    .follow,
+    .contac  {
+        text-align: start;
+    }
+}
+@media (max-width: 768px){
+    .head {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+    .logo img {
+        max-width: 200px;
+    }
+    .information,
+    .follow,
+    .contac  {
+        text-align: center;
+    }
+    .information h2,
+    .follow h2,
+    .contac h2 {
+        font-size: 22px;
+    }
+    .information ul li a,
+    .follow ul li a {
+        font-size: 16px;
+    }
+    .contac p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 480px){
+    .head {
+        flex-direction: column;
+        display: flex;
+        padding-left: 30px;
+    }
+    
+    .logo{
+        text-align: center;
+        width: 90%;
+    }
+    .logo img {
+        max-width: 150px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    .information, .follow, .contac {
+        text-align: start;
+        margin-top: -20px;
+    }
+    .information ul li a,
+    .follow ul li a {
+        font-size: 14px;
+    }
+    .contac p {
+        font-size: 14px;
+    }
+    .contac{
+        margin-bottom: 20px;
+    }
+}
